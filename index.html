@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What If - The Imagination World</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🚀 What If...</h1>
+            <p class="tagline">Share your dream projects, find collaborators, and innovate together</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="add-idea-section">
+            <h2>Share Your Dream Project</h2>
+            <form id="idea-form">
+                <div class="form-group">
+                    <label for="title">What if...</label>
+                    <input type="text" id="title" name="title" placeholder="...we could build an AI that helps everyone learn coding?" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Tell us more about your dream</label>
+                    <textarea id="description" name="description" placeholder="Describe your vision, the problem it solves, and why it excites you..." rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category">
+                        <option value="app">App Idea</option>
+                        <option value="feature">Feature Request</option>
+                        <option value="innovation">Innovation</option>
+                        <option value="collaboration">Looking for Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="github-ref">Reference a GitHub Project (optional)</label>
+                    <input type="url" id="github-ref" name="github-ref" placeholder="https://github.com/username/repo">
+                </div>
+                <div class="form-group">
+                    <label for="author">Your Name</label>
+                    <input type="text" id="author" name="author" placeholder="Anonymous Dreamer">
+                </div>
+                <button type="submit" class="btn-primary">Share Your Dream ✨</button>
+            </form>
+        </section>
+
+        <section class="ideas-section">
+            <div class="ideas-header">
+                <h2>Dream Projects from the Community</h2>
+                <div class="filter-controls">
+                    <label for="filter-category">Filter by:</label>
+                    <select id="filter-category">
+                        <option value="all">All Categories</option>
+                        <option value="app">App Ideas</option>
+                        <option value="feature">Feature Requests</option>
+                        <option value="innovation">Innovations</option>
+                        <option value="collaboration">Collaborations</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div id="ideas-container" class="ideas-grid">
+                <!-- Ideas will be dynamically loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>💡 Made with imagination | <a href="https://github.com/sehmaluva/whatif" target="_blank">Contribute on GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
